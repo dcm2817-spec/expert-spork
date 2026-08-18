@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>God's Platform — Foundation Check</title>
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+</head>
+<body>
+  <main class="container" style="padding-top: var(--space-7);">
+    <h1>God's Platform</h1>
+    <p>Connect. Collaborate. Create. Impact.</p>
+
+    <!-- Two instances prove store.js pub-sub syncs across components -->
+    <status-check></status-check>
+    <div style="height: var(--space-4);"></div>
+    <status-check></status-check>
+  </main>
+
+  <script type="module" src="components/status-check.js"></script>
+</body>
+</html>
